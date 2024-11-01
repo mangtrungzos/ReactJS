@@ -4,8 +4,8 @@
 - Các SPA khác: F8, Shoppe, 30shine, zingmp3
 
 ## Cách triển khai
-- SPA - Single-Page Application
-- MPA - Multiple-Page Application
+- SPA - Single-Page Application -> CSR -> Client Side Rendering
+- MPA - Multiple-Page Application -> SSR -> Server Side Rendering
 
 ---
 
@@ -35,7 +35,7 @@
 - SPA có phần Front-End riêng biệt
 - MPA Front-End & Back-End phụ thuộc vào nhau nhiều hơn, được đặt trong cùng 1 dự án 
 
-### SEO
+### SEO - Search Engine Optimization
 - SPA không thân thiện với SEO như MPA
 - Trải nghiệm trên thiết bị di động tốt hơn
 
@@ -50,3 +50,21 @@
     - Phát triển thêm mobile app dễ dàng    
 
 ### Phụ thuộc Javascript
+- SPA phụ thuộc hoàn toàn vào Javascript
+- MPa có thể không cần Javascript
+
+---
+
+## Chọn SPA hay MPA
+- MPA : Như làm một trang đơn giản và tương lai cũng không có ý định phát triển  lên một trang lớn, không mở mobile app
+        - Đảm bảo tốc độ phát triển nhanh 
+
+- SPA : Khách hàng quan tâm tới trải nghiệm người dùng, mượt mà, sau này phát triển thêm mobile app, features, đòi hỏi trải nghiệm người dùng tốt.
+        - chi phí phát triển cao
+
+## Performance
+- Khi một ứng dụng có nhiều người truy cập thì SPA sẽ "giảm tải cho server" 
+- Bởi việc render dữ liệu đẩy về client làm, trình duyệt tự đọc script và render giao diện
+
+- MPA : Khi sử dụng thì all requests sẽ đổ lên phía server và mỗi một thao tác chuyển trang sẽ phải request lên server => Tăng tải cho server
+        - Tốn nhiều chi phí hơn về máy chủ, hạ tầng
